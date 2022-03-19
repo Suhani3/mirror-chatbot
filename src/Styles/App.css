@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #D8D2CB;
+  overflow-x: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header, .App-footer {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #F6E7D8;
+  padding: 1%;
+  width: 100%;
+}
+
+.App-header img{
+  height: 100px;
+  border-radius: 100%;
+}
+
+.App-header h3{
+  margin-bottom: 0;
+}
+
+.App-header, .mirror-chatbot{
+  margin-bottom: 2%;
+}
+.App-link {
+  color: #61dafb;
+}
+
+/* Chatbot styles */
+.mirror-chatbot{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
+.react-chatbot-kit-chat-container{
+  width: 50%;
+}
+.react-chatbot-kit-chat-header,.react-chatbot-kit-chat-btn-send, .react-chatbot-kit-chat-input{
+  color: white;
+  border:1px solid #874356;
+  background-color: #ECA6A6!important;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.react-chatbot-kit-chat-message-container{
+background-color:#F6E7D8;
+border:1px solid #874356;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.react-chatbot-kit-chat-bot-avatar-container,.react-chatbot-kit-user-avatar-container{
+   background-color: #C65D7B;
+}
+.react-chatbot-kit-chat-bot-avatar-letter{
+  color: white;
+  font-weight: bold;
+}
+.react-chatbot-kit-chat-bot-message{
+  background-color: #874356;
+  margin-left: 0;
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+  border-right: 8px solid #874356;
+}
+
+.react-chatbot-kit-user-chat-message{
+  background-color: white;
+  color: #C65D7B;
+}
+
+.react-chatbot-kit-user-chat-message-arrow {
+  border-left: 8px solid white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
